@@ -1,0 +1,7 @@
+Inorder: LPR
+Postorder: LRP
+
+This problem is all about array index manipulation.
+The initial root/parent node will always be present at the end of the Postorder.
+We try to find this element in the inorder list. All the elements before this element will be part of the left subtree, and all the elements after it will belong to the right subtree.
+We do this recursively while keeping track of the necessary indices and returning the 'root' node at the end.
