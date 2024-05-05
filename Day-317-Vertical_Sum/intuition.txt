@@ -1,0 +1,7 @@
+We will be using PREORDER traversal to solve this problem (the other traversals can also be used).
+We will consider vertical levels.
+The level of the root node will be considered as 0.
+The preorder traversal function will have an additional 'level' parameter.
+Every time we move left we decrease the value of this level parameter by 1, and when we move right we increment it by 1.
+Now we can use a map to keep track of the level and its corresponding sum. We used a TreeMap in this case as it stores the data in sorted order(based on key value by default).
+Finally, we traverse through the entry set and store the values in an array list and return it.
