@@ -1,0 +1,2 @@
+We maintain an ArrayList and do the level order traversal just as usual but, instead of exploring the left child, we explore the right child first.
+After the traversal, we reverse this ArrayList and return it.
