@@ -1,0 +1,7 @@
+The main idea I had was to use DFS for this question.
+I used recursion for the DFS and a stack for keeping track of the current path.
+In the recursion, we have the base case where we check if the current node is null or not. If null, we return.
+If not null, we add the current node to the stack.
+We then check if the current node is a leaf node or not.
+If it's a leaf node, we add our current path to the array list. Else we continue.
+We call left recursion followed by right recursion and at the end we pop the current element from the stack and backtrack.
