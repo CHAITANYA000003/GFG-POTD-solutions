@@ -1,0 +1,5 @@
+This was a problem where we have to observe the pattern.
+The person having an odd value of 'n', can only change it to an even value of 'n'. This is because you get an odd number only by multiplying one odd number with another odd one.
+The person having an even value of 'n' can change it to both even and odd, but they should change it to odd if they play optimally. They can achieve this at any point by choosing 'x' = 1.
+As the game continues, you'll notice that if Alice starts with an odd number she'll eventually end up with n=3, after which, she has no other choice but to choose x=1. Bob chooses x=1 as well in his turn and Alice loses.
+If Alice started with an even number, she just has to make sure to choose values of x in such a way that Bob doesn't end up with an even value of 'n'. Eventually, she'll end up with n=2. She can choose x=1 at this point and win the game.
