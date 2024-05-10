@@ -1,0 +1,4 @@
+This was an easy question only which can be solved by basic recursion. But it is very important to take care of the order of the base conditions. Intially wrote `ind==n` condition before `curSum==k` and spent an hour trying to debug the error with the code.
+First we sort the array{to slightly optimize the time complexity(2^p) and also because the author was stupid cuz he considered the order of the lists in the solution}.
+Then it is just take and not-take for each element in the array, while maintaining a current list and a running sum of the current list.
+Also, for every possible solution, we check if the current list has already been considered before or not by maintaining a HashSet of ArrayLists and checking before appending in the answer list.
