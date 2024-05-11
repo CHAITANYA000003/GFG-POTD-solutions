@@ -1,0 +1,4 @@
+This was a straightforward easy level problem where we just have to do what's asked in the question.
+Remember that the time complexity for pow() and sqrt() in c++ is O(logn).
+So, we are actually solving this problem in O(n*logn).
+Also, was getting TLE when I wrote 'int' instead of 'long' while typecasting. An error would have made more sense.
