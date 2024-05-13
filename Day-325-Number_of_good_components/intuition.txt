@@ -1,0 +1,7 @@
+The problem is basically finding the number of components in a graph with an additional step.
+We need to make an adjacency list, and also a boolean array to keep track of the visited vertices.
+First, we converted the given array of edges into an adjacency list for convenience.
+Since we may have disconnected vertices, we need a for loop to call DFS for each unvisited vertex.
+In the DFS function, we use a stack to perform the traversal. We also need to keep track of the vertex count and the edge count in that component.
+After the traversal of the component, we'll have the number of vertices and edges in that component. Now, using the formula from combinations, we know `(vertices * (vertices-1))/2` will give us the number of edges in a full connected component with a given vertex count. Therefore, if the above value is equal to `edges/2`, then we can say that the current component is a fully connected one.
+We repeat the above for all the components and finally return the count of fully connected components.
