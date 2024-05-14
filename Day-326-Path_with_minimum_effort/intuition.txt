@@ -1,0 +1,6 @@
+The code for this problem is very similar to that of Dijkstra's Algorithm.
+We have intialised 'dx' and 'dy' arrays which will help us in traversing the matrix {top, left, bottom, and right}.
+We have declared a Priority Queue of integer arrays. Each integer array will have 3 values:- x-coordinate, y-coordinate, and the effort associated with that cell. We have also modified the comparator to sort based on the 3rd value{effort}.
+From this point, it's just like Dijkstra's algo with some added if-else conditions.
+We run a while loop till the PQ is empty. We poll an integer array and using its coordinates we move to the corresponding adjacent cells. For each polled cell, we calculate the difference in heights with its adjacent ones. We calculate the effort for this new adjacent cell as the max value between the 'effort' of the polled cell and the recently calculated height difference. We then add the coordinates of this adjacent cell along with its weights into the PQ.
+Repeat the above till we encounter polled array whose coordinates match the right-bottom cell of the matrix. Once we reach this cell, we return its 'effort'.
