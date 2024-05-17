@@ -1,0 +1,8 @@
+This question can easily be solved in O(N) time complexity by using a HashMap which take a space complexity of O(N). But the question requires us to use O(1) space complexity and allows us to take O(N*logN) time complexity. So the intuition here is that we sort the given array first, and then for each element in the array, we use Binary Search to find if the corresponding element is present in the array or not.
+
+APPROACH:
+1. Sort the array.
+2. Run a for-loop for each element in the array.
+3. For each element, use binary search to find whether `element - x` is present in the array or not.
+4. If we find a possible solution at any point, we return 1, breaking the loop.
+5. Return -1 if a solution is not found.
