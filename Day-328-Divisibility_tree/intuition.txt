@@ -1,0 +1,7 @@
+To solve this problem, we can perform a depth-first search (DFS) traversal of the tree while keeping track of the size of each subtree. At each step, we check if the size of the subtree rooted at the current node is even. If it is even, we increment the count of edges to be removed, as we need to disconnect this subtree from the rest of the tree to form disjoint union trees with even-sized components.
+APPROACH:
+Construct an adjacency list representation of the tree.
+Implement a DFS function to traverse the tree recursively.
+During the DFS traversal, keep track of the size of each subtree.
+If the size of a subtree is even, increment the count of edges to be removed.
+Return the count of edges to be removed as the result.
