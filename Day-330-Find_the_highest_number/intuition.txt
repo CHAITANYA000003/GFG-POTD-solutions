@@ -1,0 +1,9 @@
+We can use BINARY SEARCH to solve this problem.
+The main issue I had with coding the solution for this problem was handling the indices properly.
+
+APPROACH:
+1. We initialize the 'low' and 'high' pointers, and calculate the 'mid' value in the while loop `while(low < high)`.
+2. We compare the 'mid' element with 'mid+1'
+    - if 'mid+1' is greater than 'mid', then the solution will be in the right half so we move 'low' pointer to 'mid+1'.
+    - if 'mid' is greater than 'mid+1', then the solution will be in the left half including the 'mid' element so we move the 'high' pointer to 'mid'
+3. Convergence: The loop continues till 'low' equals 'high', at which point they both point the solution. We return this value.
