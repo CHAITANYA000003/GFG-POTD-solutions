@@ -1,0 +1,9 @@
+We use Binary Search to solve this problem.
+The key point here is to know that when we perform Binary Search and don't find the element, then the 'low' and 'high' pointers always end up on the two closest values to the target element. This knowledge, along with handling the edge cases(when the index may go out of bound) is sufficient to solve the problem.
+
+APPROACH:
+1. Initialize the 'low' and 'high' pointers and run the while loop as long as `low <= high`.
+2. Compute the 'mid' value and check if a[mid] == k, in which case we will return a[mid] as the answer.
+3. If a[mid] < k, then we shift the 'low' pointer to 'mid+1' but only after checking if 'mid+1' is a valid index or not. If not, it means that we reached the end of the array and the maximum element in the array is still smaller than the target. Therefore, we return this maximum element(a[n-1]) as the answer.
+4. If a[mid] > k, then we shift the 'high' pointer to 'mid-1'. Again, we do this only after checking if `mid-1` is a valid index or not. If not, then we return `a[0]`, as the target element is smaller than the smallest element in the array.
+5. After exiting the loop, we check which among `a[low]` and `a[high]` gives the better answer and return it.
