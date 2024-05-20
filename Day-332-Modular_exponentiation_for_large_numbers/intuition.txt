@@ -1,0 +1,10 @@
+To implement the function PowMod which calculates (xn)%M, we can use an efficient algorithm called Modular Exponentiation. The key idea is to use the property of modular arithmetic to reduce the size of intermediate results, thus avoiding overflow and speeding up the computation.
+
+APPROACH:
+1. Initialize the result as 1.
+2. Update x to x % M to handle large values of x.
+3. Use a loop to handle the exponentiation, updating result and x as you go:
+    - If n is odd, multiply result by x and take modulo M.
+    - Square x and take modulo M.
+    - Divide n by 2.
+4. The loop continues until n becomes 0.
