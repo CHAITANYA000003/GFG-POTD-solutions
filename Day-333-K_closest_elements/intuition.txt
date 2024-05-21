@@ -1,0 +1,9 @@
+Another problem that revolves around Binary Search. The idea is straightforward, we find the low and high pointers around the target element, and then keep checking and adding elements while exploring both sides till we find 'k' elements.
+
+APPROACH:
+1. We perform Binary Search. We know that low will cross high if we don't find 'x' in the array. Therefore I have swapped 'low' and 'high' after exiting the while loop. In case we find 'x' in the array, then we set the value of 'low' as `mid+1` and the value of 'high' as `mid-1` so that after exiting and performing the swap, they'll store the correct values only.
+2. A loop runs until k closest elements are found. Inside the loop, the differences between x and the elements at low and high pointers are compared:
+    - If the element at low (i.e., a[low]) is closer to x than the element at high (i.e., a[high]), the element at low is added to ans, and low is decremented to move to the next closest element on the left.
+    - Otherwise, the element at high is added to ans, and high is incremented to move to the next closest element on the right.
+    - If one of the pointers goes out of bounds (i.e., low < 0 or high >= n), the remaining elements are taken from the valid side.
+3. We return the 'ans' array.
