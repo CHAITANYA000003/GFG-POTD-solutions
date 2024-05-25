@@ -1,0 +1,2 @@
+Traverse the array and find the sum of the contiguous sub-array which gives you the maximum value.
+Edge case where you check the current_sum after exiting the while loop. To ensure that we are checking our answer in case the last element of the array belongs to the answer.
