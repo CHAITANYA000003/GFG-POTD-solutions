@@ -1,0 +1,6 @@
+The first brute force thought would be tarversing across every range ( l[i] , r[i] ) and keeping the count of each element in the range, at end check the maximum element in the count and return result. Time complexity will be O(n*maxx).
+
+To optimize this approach for every time we go through a range we update only first(l[i]) and last next(r[i]+1) elements in some way (will discuss later) such that it accounts for all elements between them. Then we do just only one tarversel across count array and update every element with its original count (previously only first and last next elment of range were only correctly marked) and simultaneously store max to find the desired answer.
+
+How the first and last next elment accounts whole range?
+So if we are given the count of first elment of range all element in between it also should account in that range so we add the count of first elment to it. If it also belongs to another range simultaneously that also account it and count of that is also added. So we tend to add the prefix count of that element to its original value.At the end of range we should subtract the count. Hence the first element of every range is incremented and last next elment is decremented.  
