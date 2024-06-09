@@ -1,0 +1,1 @@
+Traverse the array and ensure that for each even index, the current element is less than the next element, and for each odd index, the current element is greater than the next element. Swap elements if the condition is not satisfied.
