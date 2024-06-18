@@ -1,0 +1,6 @@
+This was a pure mathematic problem.
+Consider a rectangle of length 'a' and breadth 'b' whose vertices are on the circumference of the circle.
+Now draw a diagonal to this rectangle. You will notice that the length of it will be equal to 2*r.
+Applying Pythagoras Theorem, we'll get a^2 + b^2 = (2*r)^2.
+From the above equation, we can derive the value of a^2 as (2*r)^2 - b^2. This is the maximum possible value for 'a'. We can consider all the integers up to this value to be in place of 'b'.
+Now we run a loop for the value of 'a' from 1 to 2*r, maintaining an answer variable which will contain the summation of all the floor values.
