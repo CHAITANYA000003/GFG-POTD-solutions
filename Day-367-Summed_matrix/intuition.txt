@@ -1,0 +1,3 @@
+The problem requires just a bit of observation.
+From the image, the elements on one diagonal will have the same value.
+Therefore, our task is to find on what diagonal will the required element lie, and also how many total elements will be present in this diagonal.

@@ -1,0 +1,2 @@
+The problem just requires us to manipulate the columns of a matrix.
+We find the effective value of 'k' before performing the operation. We'll get TLE if we don't.
