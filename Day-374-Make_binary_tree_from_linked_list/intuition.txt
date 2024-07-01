@@ -1,0 +1,15 @@
+1. Initialisation
+- A queue q is initialized to facilitate the level-order construction of the binary tree.
+- The root of the binary tree is created using the data from the head of the linked list.
+- The root node is then added to the queue.
+
+2. Level-order Construction:
+- The algorithm uses a while loop to traverse the linked list and build the tree level by level until the end of the linked list is reached.
+- Inside the loop:
+    - The current node (temp) is dequeued from the queue.
+    - The left child of temp is created using the next element in the linked list (if available), and this new node is added to the queue.
+    - Similarly, the right child of temp is created using the subsequent element in the linked list (if available), and this new node is added to the queue.
+
+3. Termination:
+- The loop continues until there are no more elements in the linked list.
+- The function returns the root node of the newly constructed binary tree.
