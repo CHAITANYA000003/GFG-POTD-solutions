@@ -1,0 +1,14 @@
+The  thing that we are gonna do here is called as SERIALIZATION. For those who don't know it " Serialization is to store the tree in a file so that it can be later restored."
+We are serializing every subtree possible in the form of string here of the given tree.
+Here we are using a DFS approach to traverse the tree and generate each subtree into a string using a inorder traversal.
+Each generated string includes the data of the current node and generated subtree of its left and right , separated by a special character ("#").
+
+INORDER TRAVERSAL AND SERIALIZATION:
+The inorder function performs an inorder traversal of the binary tree.
+For each node, it recursively serializes the left subtree, then the right subtree, and combines them with the current node's value to form a unique string representation of the subtree rooted at the current node.
+The format used for serialization is leftSubtree # rootValue # rightSubtree.
+
+
+UPDATE FREQUENCY MAP:
+The serialized subtree string is added to the hm map, updating its frequency count.
+If a subtree's frequency becomes 2 (i.e., the subtree has been encountered before and this is the second occurrence), add the current node to the ans list.
