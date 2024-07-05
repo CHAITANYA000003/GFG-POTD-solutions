@@ -1,0 +1,4 @@
+We need to return the number of vertical lines on the binary tree. Consider the X-Axis with the root on x = 0.
+The idea then is to use a traversal technique where we increment the value of 'x' everytime we move right and decrement it when we move left.
+We store the minimum possible value in the 'left' variable, and the maximum value in the 'right' variable.
+We finally return `right - left + 1`. The '1' is to compensate for the line on the 0-index(root node).
