@@ -1,0 +1,3 @@
+We used PREORDER traversal to solve this question.
+We search the left and right subtrees recursively to find the target element. If the element is we found we return 'true', else 'false'.
+If the target is found in the subtree, then we add the parent element's data in the answer list. Thus keeping track of all the ancestors of the required node.
