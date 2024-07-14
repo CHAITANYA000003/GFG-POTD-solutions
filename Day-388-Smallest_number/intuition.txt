@@ -1,0 +1,13 @@
+1. Check for Impossibility: If the sum 's' is greater than 9 times 'd', then it is impossible to have an answer so we return "-1" in this case.
+2. The boolean variable 'first' keeps track of whether the first digit in the number has been placed or not. This is to make sure that there are no leading zeros in the answer.
+3. Outer While Loop: Continue until all d digits are placed.
+    Inner For Loop: Iterate from 0 to 9 to find the smallest possible digit that can be placed at the current position. 
+        - Skip 0 if it’s the first digit because the number cannot start with zero unless it is the only digit.
+        - Check if placing digit 'i' at the current position is feasible. The condition `(s - i) <= (d - 1) * 9` ensures that the remaining sum `s−i` can be distributed across the remaining `d−1` digits.
+        - If a valid digit i is found:
+            -- Append i to ans.
+            -- Subtract i from s.
+            -- Set 'first' to false if this was the first digit placed.
+            -- Break out of the inner loop to move to the next digit position.
+        - Decrement 'd' as one digit has been placed.
+4. We return the answer after exiting the loop.
