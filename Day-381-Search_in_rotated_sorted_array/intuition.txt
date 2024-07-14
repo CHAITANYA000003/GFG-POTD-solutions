@@ -1,0 +1,9 @@
+To solve this problem, we can leverage the properties of a sorted and rotated array and use a modified binary search algorithm. The goal is to find the index of the given key in the array in O(log n) time complexity.
+
+Steps to Solve:
+1. Identify the Midpoint: Start by finding the middle element of the array.
+2. Check if the Key is at Mid: If the key is the middle element, return the index.
+3. Determine the Sorted Half: Since the array is rotated, one of the halves (left or right) must be sorted.
+4. Check if the Key is in the Sorted Half: Determine if the key lies within the range of the sorted half.
+5. Adjust the Search Range: Depending on whether the key lies in the sorted half or not, adjust the search range to either the left or right half.
+6. Repeat: Continue the process until the key is found or the search range is exhausted.

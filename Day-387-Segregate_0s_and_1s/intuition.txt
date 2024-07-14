@@ -1,0 +1,2 @@
+Count the number of ones and zeros.
+Iterate through the array replacing the elements with all zeros first followed by the ones.
