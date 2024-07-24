@@ -1,0 +1,15 @@
+INTUITION: 
+In a BST, for any node:
+1. All values in its left subtree must be less than the node's value.
+2. All values in its right subtree must be greater than the node's value.
+3. This property must hold for every node in the tree.
+
+APPROACH:
+1. Use a recursive function that tracks the allowed range for each node.
+2. Start with the root, allowing the full range of possible values.
+3. For each node:
+    - Check if its value is within the allowed range.
+    - Recursively check the left subtree, updating the upper bound to the current node's value.
+    - Recursively check the right subtree, updating the lower bound to the current node's value.
+4. If any node violates its allowed range, the tree is not a BST.
+5. If all checks pass, the tree is a valid BST. 

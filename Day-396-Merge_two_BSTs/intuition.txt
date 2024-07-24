@@ -1,0 +1,3 @@
+1. Perform inorder traversal on the first BST to get the sorted array.
+2. Then do it on the second BST to get its sorted array.
+3. Merge the two arrays using TWO-POINTER approach and return this new array.
