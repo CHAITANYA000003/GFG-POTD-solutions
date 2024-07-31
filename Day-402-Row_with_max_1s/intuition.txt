@@ -1,0 +1,6 @@
+APPROACH
+To solve in O(N + M) 
+1. Start from the top right corner of the matrix and keep track of the index of the row which has maximum 1s. 
+2. Go left if you encounter 1
+3. Go down if you encounter 0
+4. Stop when you reach the last row or first column. 

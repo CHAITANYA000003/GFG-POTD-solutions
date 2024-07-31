@@ -1,0 +1,2 @@
+We will be using a boolean array to keep track of the encountered letters.
+The space complexity would be O(26) which is equivalent to O(1).

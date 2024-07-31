@@ -1,0 +1,14 @@
+INTUITION
+To solve this problem, we can use a backtracking approach.
+Backtracking involves exploring all possible paths and then backtracking to try alternative routes if a path doesn't lead to the destination.
+This method ensures that we explore all possible solutions and find all valid paths.
+
+APPROACH
+1. Check for Immediate Blocks: First, we check if the starting or ending cell is blocked. If either is blocked, return an empty list as no path is possible.
+2. Initialize Variables: Set up the grid dimensions and a list to store all valid paths.
+3. Recursive Backtracking Function: Implement a recursive function that:
+   - Marks the current cell as visited.
+   - Tries moving in all four possible directions (up, down, left, right).
+   - Recursively explores each direction if the move is valid (within bounds and not blocked).
+   - Adds the current path to the list if the destination is reached.
+   - Unmarks the current cell to allow for other potential paths.
