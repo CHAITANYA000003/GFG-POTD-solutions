@@ -1,0 +1,11 @@
+INTUITION
+The intuition behind spirally traversing a matrix is to iterate over the matrix in layers. Imagine peeling an onion layer by layer: you start from the outermost layer, then move inward one layer at a time until you reach the center. This approach involves defining boundaries (top, bottom, left, right) and updating them as you traverse the matrix.
+
+APPROACH
+1. Define Boundaries: Initialize the top, bottom, left, and right boundaries of the matrix.
+2. Traverse Layers: Use a while loop to traverse the matrix layer by layer until all elements are visited.
+    - Traverse the top row from left to right.
+    - Traverse the right column from top to bottom.
+    - Traverse the bottom row from right to left (if there are remaining rows).
+    - Traverse the left column from bottom to top (if there are remaining columns).
+3. Update Boundaries: After completing each layer, update the boundaries to move inward.
