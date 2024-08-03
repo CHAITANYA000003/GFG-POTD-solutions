@@ -1,0 +1,33 @@
+DESCRIPTION
+A celebrity is defined as someone who is known by everyone but does not know anyone else.
+
+Imagine a scenario where you are at a party with n people.
+A square matrix mat is used to represent the relationships among the partygoers.
+If mat[i][j] is 1, it means person i knows person j; if it is 0, person i does not know person j.
+Your task is to determine the index of the celebrity if one exists; otherwise, return -1.
+
+
+INTUITION
+The key to solving the Celebrity Problem lies in understanding the definition of a celebrity:
+1. A celebrity knows no one.
+2. A celebrity is known by everyone else.
+
+Given these properties, we can deduce that:
+- In the matrix mat, the row corresponding to the celebrity should have all zeros.
+- The column corresponding to the celebrity should have all ones, except for the diagonal element (which represents the celebrity knowing themselves and should be zero).
+
+
+APPROACH
+To find the celebrity, we need to:
+1. Iterate through each person and check if they meet the criteria of a celebrity.
+2. Specifically, for a person i:
+   - Ensure the sum of row i is 0 (indicating they know no one).
+   - Ensure the sum of column i is n-1 (indicating everyone else knows them).
+
+Here's the step-by-step approach:
+1. Initialize the number of people at the party as num_people.
+2. Iterate through each person and calculate:
+   - The sum of the row for that person.
+   - The sum of the column for that person.
+3. If the person meets both conditions, return their index.
+4. If no such person is found, return -1.
