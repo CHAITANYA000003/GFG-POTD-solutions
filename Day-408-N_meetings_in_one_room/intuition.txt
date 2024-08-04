@@ -1,0 +1,7 @@
+INTUITION
+The key idea here is to select meetings that finish the earliest. By doing so, you leave the room available for as many subsequent meetings as possible. Sorting the meetings by their end times ensures that we always consider the earliest finishing meeting next.
+
+APPROACH
+1. Sort Meetings by End Time: First, sort all the meetings based on their end times. This way, we can always pick the earliest finishing meeting.
+2. Initialize Count and Track End Time: Initialize a counter to keep track of the number of meetings we can accommodate. Also, keep track of the end time of the last selected meeting.
+3. Iterate and Select Meetings: Go through the sorted list of meetings. For each meeting, check if it starts after the last selected meeting ends. If it does, select this meeting, increase the counter, and update the last end time.
