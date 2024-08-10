@@ -1,0 +1,3 @@
+`it` is to traverse the linked list.
+`temp` is to store the kth node.
+`count` is to find the kth node, it also contains the total number of nodes in the list by the end.
