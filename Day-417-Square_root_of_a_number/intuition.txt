@@ -1,0 +1,9 @@
+To find the square root of a number n efficiently, especially for large numbers, we use a binary search technique.
+The idea behind using binary search is to systematically narrow down the range in which the square root can lie, reducing the number of calculations compared to a brute-force approach.
+
+Here’s how the binary search method works:
+1. Initialization: Start with a range between 1 and n.
+2. Mid Calculation: Calculate the middle value mid of the current range.
+3. Square Check: If mid * mid equals n, mid is the square root.
+4. Range Adjustment: If mid * mid is less than n, the square root lies to the right, so adjust the starting point to mid. If mid * mid is greater than n, the square root lies to the left, so adjust the endpoint to mid.
+5. Termination: The process continues until the start and end points are adjacent, at which point the closest integer to the square root is found.
