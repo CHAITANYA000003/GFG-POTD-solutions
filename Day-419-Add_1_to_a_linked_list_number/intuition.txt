@@ -1,0 +1,11 @@
+Approach:
+1. Reverse the linked list:
+   This allows us to start the addition from the least significant digit.
+
+2. Add 1 to the number:
+   - Traverse the reversed list, adding 1 to the first node.
+   - Propagate any carry to subsequent nodes.
+   - If there's still a carry after reaching the end, add a new node.
+
+3. Reverse the list again:
+   This restores the original order of digits.
