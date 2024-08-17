@@ -1,0 +1,5 @@
+The idea in this is to store the product of all the elements is a variable and then iterate the array and replace ith element of the array with product/current_index_value in a array. and then return this array.
+
+EDGE CASES:
+1. When you have only 1 zero in the array: Calculate the product without including this zero. The index of this zero in the answer array will have this product whereas all the remaining elements will be zero.
+2. When you have more than 1 zero: All the elements in the ans array will be zero.
