@@ -1,0 +1,8 @@
+APPROACH:
+1. Calculate the total sum of the array
+2. If the sum is odd we can immediately return false
+3. Divide it by 2, this will be our target to achieve
+4. Traverse the array while keeping track of the current sum
+    - If the current sum equals our target, return true
+    - If the current sum becomes greater than our target, return false
+5. Return false
