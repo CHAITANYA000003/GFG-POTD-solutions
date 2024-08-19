@@ -1,0 +1,8 @@
+From the given time and space complexities , we infer that we shouldn't use priority queue or sort function ,as it's time complexity will be O(nlogn). 
+
+Also the given space complexity indicates that we need to take a data structure with size equal to max_element.
+1. So we first find the max element of the array arr. It takes O(n) time.
+2. Then we create an array "elements" with size max_element intialised with 0.
+3. Then we iterate over array arr and mark the elements int the array arr as 1.
+4. Then we iterate from i=0 to max_element and if "elements[i]==1" i.e. if that element is present in array arr , we decrease k by 1; and in the loop we check  if k==0 , i.e. we are on kth smallest element , we return i.             
+5. This operation took O(max_element) time , so total time complexity is O(n+max_element) and the array element we created has size max_element , so time complexity is O(max_element).
