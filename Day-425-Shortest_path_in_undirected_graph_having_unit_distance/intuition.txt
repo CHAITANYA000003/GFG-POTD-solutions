@@ -1,0 +1,8 @@
+APPROACH
+1. Graph Representation: Represent the graph using an adjacency list since it is space-efficient for sparse graphs.
+2. Initialization: Start BFS from the source node.
+Initialize a list to keep track of the shortest distance to each node, initially set to -1 (indicating unreachable nodes). The distance to the source node is 0.
+3. BFS Traversal: Use a queue to manage the current level of nodes being explored. For each node, explore its neighbors and update their shortest distance if they haven't been visited yet.
+4. Edge Cases: If a node is not reachable from the source node, it remains -1 in the shortest distance list.
+ 
+This method ensures that the shortest path to each node is found in linear time relative to the number of vertices and edges
