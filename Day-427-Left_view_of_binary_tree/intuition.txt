@@ -1,0 +1,2 @@
+INTUITION:
+The idea is to use a simple iterative approach. We can traverse level by level and in each level choose the first node.
