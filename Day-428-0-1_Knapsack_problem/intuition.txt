@@ -1,0 +1,14 @@
+APPROACH
+The dynamic programming (DP) approach to solving the 0-1 Knapsack problem involves building a 2D table where each cell dp[i][w] represents the maximum value that can be obtained using the first i items with a total weight limit of w.
+ 
+Here's a step-by-step breakdown:
+1. Initialization:
+Create a 2D DP table of size (number of items + 1) x (capacity + 1), where each element is initialized to zero.
+The extra row and column account for the base case when no items are included or the knapsack has zero capacity.
+2. Filling the DP Table:
+   - Iterate through each item and capacity.
+   - For each item, there are two possibilities:
+     1. Exclude the item: The value remains the same as the previous row, dp[i-1][w].
+     2. Include the item: If the item's weight is less than or equal to the current capacity, we calculate the value by including the item: dp[i-1][w - weight of the item] + value of the item.
+   - Take the maximum of these two possibilities to fill the DP table.
+3. Final Answer: The bottom-right cell of the DP table (dp[num_items][capacity]) will contain the maximum value that can be obtained.
