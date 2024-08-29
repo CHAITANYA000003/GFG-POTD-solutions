@@ -1,0 +1,2 @@
+APPROACH:
+For optimal solution, we can use two pointers, "fast" and "slow", to check for the presence of a loop in the linked list. The fast pointer is moved two nodes at a time, while the slow pointer is moved one node at a time. If there is a loop, the fast pointer will eventually catch up with the slow pointer, and the while loop will exit. The size of the loop is then calculated by moving the fast pointer one node at a time and incrementing a counter. The size of the loop is returned as the result.
