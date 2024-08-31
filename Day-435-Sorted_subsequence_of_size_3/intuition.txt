@@ -1,0 +1,23 @@
+Intuition
+
+We want to identify a subsequence of three elements in an array such that they form an increasing sequence. For an array `arr`, we need to find indices `i`, `j`, and `k` where `arr[i] < arr[j] < arr[k]` and `i < j < k`. A brute force approach would involve checking all possible triplets, which is inefficient for large arrays.
+
+Approach
+
+To solve this efficiently:
+1. Track Minimum Values: Use an array to store the minimum value up to each index.
+2. Track Maximum Values: Use another array to store the maximum value from each index to the end of the array.
+3. Check for Valid Triplets: Iterate through the array, and for each element, check if there's a valid smaller element before it and a valid larger element after it.
+
+Explanation
+
+1. Initialization:
+   - Create `minLeft` to store the minimum value up to each index.
+   - Create `maxRight` to store the maximum value from each index to the end.
+
+2. Fill Arrays:
+   - Traverse the array from left to right to populate `minLeft`.
+   - Traverse the array from right to left to populate `maxRight`.
+
+3. Find the Triplet:
+   - For each element in the array, check if there exists a smaller value before it (in `minLeft`) and a larger value after it (in `maxRight`).
