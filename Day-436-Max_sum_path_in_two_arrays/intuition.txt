@@ -1,0 +1,22 @@
+Approach:
+To solve this problem, we can use a two-pointer technique while traversing both arrays. The basic idea is to keep track of two potential sums: one from arr1 and the other from arr2. When we encounter a common element, we add the maximum of the two sums to the result and reset the sums. After processing all common elements, we add any remaining sum from either array to the result.
+
+Detailed Steps:
+1. Initialize Pointers and Sums:
+Let i = 0 be the pointer for arr1.
+Let j = 0 be the pointer for arr2.
+sum1 will keep track of the sum of elements from arr1.
+sum2 will keep track of the sum of elements from arr2.
+res will store the final result.
+Traverse Both Arrays:
+
+2. If arr1[i] < arr2[j], add arr1[i] to sum1 and move the pointer i to the next element.
+If arr1[i] > arr2[j], add arr2[j] to sum2 and move the pointer j to the next element.
+If arr1[i] == arr2[j], add the maximum of sum1 and sum2 to res (including the common element once), reset sum1 and sum2, and move both pointers to the next element.
+Add Remaining Elements:
+
+3. After traversing one array completely, add the remaining elements of the other array to the corresponding sum.
+Add the maximum of sum1 and sum2 to res.
+Return the Result:
+
+4. The final value of res will be the maximum sum of the path.
