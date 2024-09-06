@@ -1,0 +1,12 @@
+'findLCSLength'
+This function finds the length of the Longest Common Subsequence between two strings using dynamic programming.
+
+1. m and n: Store the lengths of str1 and str2, respectively.
+2. dp table: A 2D vector (matrix) of size (m+1) x (n+1) initialized to 0. This table will store the lengths of LCS for different substrings of str1 and str2.
+3. Loop through i and j: The nested loops iterate over each character of str1 and str2.
+4. Check for character match (str1[i-1] == str2[j-1]):
+    - If the characters match, extend the LCS found so far by 1. This is because we can include this character in the LCS, so dp[i][j] = dp[i-1][j-1] + 1.
+5. Character mismatch:
+    - If the characters do not match, the LCS length is the maximum of either ignoring the current character of str1 (dp[i-1][j]) or ignoring the current character of str2 (dp[i][j-1]).
+    
+The table dp is filled such that dp[i][j] will store the length of the LCS of str1[0...i-1] and str2[0...j-1]. The final answer for the full strings str1 and str2 will be stored in dp[m][n].

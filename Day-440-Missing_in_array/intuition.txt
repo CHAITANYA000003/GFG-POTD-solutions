@@ -1,0 +1,5 @@
+This one is more of a Math based problem based on the concept of Arithmetic Progression.
+
+1. We first calculate the expected sum (the sum of first 'n' natural numbers).
+2. We then calculate what the actual array sum is.
+3. The difference between these two sums will be the missing number.

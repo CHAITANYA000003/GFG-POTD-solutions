@@ -1,0 +1,6 @@
+To solve this problem where the order of steps doesn't matter, we can break down the problem as follows:
+
+1. Since the order doesn't matter, the key observation is that the person can either take:
+    - All steps as 1 stair steps.
+    - Some steps as 1 stair steps and some as 2 stairs steps.
+2. The number of ways to climb to the nth stair when order doesn't matter is simply the number of different combinations of 1 and 2 steps that sum up to n.
