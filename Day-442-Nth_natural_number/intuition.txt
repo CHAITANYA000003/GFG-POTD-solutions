@@ -1,0 +1,11 @@
+INTUITION:
+The key insight is to recognize that the sequence of numbers without 9 can be mapped to a base-9 number system.
+
+APPROACH:
+1. We treat the input n as if it's a number in base-9.
+2. We convert this base-9 number to base-10, building the result from right to left.
+3. For each digit of n (in base-9):
+   - We multiply the digit by the appropriate power of 10 (for base-10)
+   - We add this to our result
+   - We move to the next digit by dividing n by 9
+4. We continue this process until n becomes 0.
