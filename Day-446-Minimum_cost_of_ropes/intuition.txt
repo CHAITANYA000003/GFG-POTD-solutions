@@ -1,0 +1,9 @@
+INTUITION:
+The idea is to pick the smallest two elements in each step. Why do we do this? This is because once we consider an element, it will be included in every further sum we find. Therefore, including a larger value at the beginning will increase the final solution.
+
+APPROACH:
+We will be using a Min Heap to solve this problem.
+Initially, we will push all the array elements into the Priority Queue.
+We then keep popping two elements each time, as long as the size of the pq is greater than 1.
+We calculate the sum of these 2 elements and then add it back to the pq.
+We maintain an 'ans' variable to keep track of the sum. 
