@@ -1,0 +1,14 @@
+APPROACH
+Two Pointer Technique (Tortoise and Hare):
+
+1. We use two pointers: slow and fast. Both start at the head of the list.
+    - The fast pointer moves twice as fast as the slow pointer.
+    - For every step slow takes, fast takes two steps.
+    - When fast reaches the end of the list, slow will be at the middle of the list.
+    - Why does this work?
+
+2. Since fast moves twice as quickly as slow, by the time fast reaches the end of the list, slow will have covered half the distance, landing at the middle node.
+
+3. Edge Cases:
+    If the list is empty (head == nullptr), we return -1 as there is no middle node.
+    If the list contains only one element, that element itself is the middle.
