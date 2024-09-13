@@ -1,0 +1,32 @@
+Intuition:
+The key insight for solving the mirror tree problem is that we need to swap the left and right children of every node in the tree. This process needs to be applied recursively from the root to the leaves.
+
+Approach:
+1. Start at the root of the tree.
+2. For each node:
+   a. Swap its left and right children.
+   b. Recursively apply the same process to the left subtree.
+   c. Recursively apply the same process to the right subtree.
+3. The base case is when we reach a null node, at which point we simply return.
+
+This approach ensures that we visit every node exactly once and perform the necessary swapping operation.
+
+Time Complexity:
+The time complexity of this solution is O(N), where N is the number of nodes in the binary tree.
+- We visit each node in the tree exactly once.
+- At each node, we perform a constant amount of work (swapping pointers).
+- Therefore, the total time is proportional to the number of nodes.
+
+Space Complexity:
+The space complexity is O(H), where H is the height of the tree.
+- We don't use any extra data structures that grow with the input size.
+- The space usage comes from the recursive call stack.
+- In the worst case (a completely unbalanced tree), H can be equal to N, making the space complexity O(N).
+- In the best case (a perfectly balanced tree), H is log(N), making the space complexity O(log N).
+
+It's worth noting that this is the auxiliary space complexity. The overall space complexity including the input is still O(N) as we need space to store the tree itself.
+
+This approach is considered optimal because:
+1. It achieves the minimum possible time complexity (we must visit every node at least once).
+2. It uses only the necessary auxiliary space (the call stack).
+3. It modifies the tree in-place, not requiring any additional data structures.
