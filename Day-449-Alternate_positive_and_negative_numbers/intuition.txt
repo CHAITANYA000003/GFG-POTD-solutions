@@ -1,0 +1,13 @@
+INTUITION
+The problem can be easily solved because we are allowed to use O(n) extra space.
+
+We can store the positive values and negative values in two separate data structures.
+We will start filling the original array with alternating positive and negative values at even and odd index respectively in the same order 
+in which it appears in the original array.
+
+APPROACH:-
+Take 2-vectors one for storing positive elements and another one for negative elements.
+Take 2 pointers one is pointing to positive vector indexes and another one is pointing to negative vector indexes and initialize it with zero.
+Run a loop from 0 to N-1 and Check 
+If the index is even and positive elements are present in the vector or there are no negative elements left in the negative vector then put the positive value at that index into the array and increase the positive pointer.
+Else put the Negative value at that index into the array and increase the Negative pointer.
