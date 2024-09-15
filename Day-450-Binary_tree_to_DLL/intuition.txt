@@ -1,0 +1,12 @@
+INTUITION:
+To solve the problem, think of in-order traversal as the key to linking the nodes. The doubly linked list (DLL) should follow the same sequence as the in-order traversal of the binary tree. In in-order traversal, the leftmost node is always visited first, and that becomes the head of the DLL. From there, each node we visit should be connected to the previous node in the traversal. The "previous" node should be stored so that it can be linked with the current node, forming the DLL in-place as we traverse.
+
+APPROACH:
+1. Initialize prev as null to keep track of the previously visited node in the DLL.
+2. Perform an in-order traversal (recursion) of the binary tree:
+    - Recursively traverse the left subtree.
+    - Link the current node to prev (i.e., set current.left = prev and prev.right = current).
+    - Move prev to the current node.
+    - Recursively traverse the right subtree.
+3. After traversal, find the leftmost node (which becomes the head of the DLL) by moving left from the root until you reach null.
+4. Return the head of the DLL.
