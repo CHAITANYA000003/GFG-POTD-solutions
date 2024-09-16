@@ -1,0 +1,19 @@
+KEY IDEA:
+Your current approach tackles the problem with two passes over the string:
+
+1. Left to Right pass:
+    - You scan the string from left to right while counting the number of opening and closing parentheses.
+    - The idea is that if the count of closing parentheses cl ever exceeds the count of opening parentheses op, the substring cannot be valid anymore. At that point, you reset both counters because the current substring can't contribute to a valid answer.
+    - If at any point the number of opening parentheses is equal to the number of closing parentheses (op == cl), you calculate the potential answer by checking the sum of op + cl, which gives you the length of the valid substring.
+2. Right to Left pass:
+    - After finishing the left-to-right scan, you reverse the process, scanning the string from right to left.
+    - This is necessary because a string like "(()" will not be counted as valid when scanning from left to right, but could form a valid substring from the right perspective.
+    - In this pass, you handle cases where there are more opening parentheses than closing ones by resetting counters when op exceeds cl. You again check for valid parentheses by comparing if op == cl.
+
+CORE OBSERVATIONS:
+    - The left-to-right pass ensures that we catch valid sequences when closing parentheses are greater or equal to opening ones (from the left side).
+    - The right-to-left pass helps in catching valid sequences where opening parentheses might be greater (from the right side).
+    - This dual-pass technique ensures that all valid sequences are captured, whether they’re left-skewed or right-skewed in terms of parentheses.
+
+EDGE CASE:
+If there are unmatched parentheses, either excessive ( or ), the string can't be valid past the point where the counts become unbalanced. This is why we reset op and cl when they get out of sync (i.e., cl > op in the left-to-right pass, or op > cl in the right-to-left pass).
