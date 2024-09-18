@@ -1,0 +1,15 @@
+INTUITION:
+The problem of checking balanced parentheses (or brackets) is a classic problem in computer science, often solved using stacks. The idea is that each opening bracket must have a corresponding closing bracket, and they must match in the correct order. By leveraging the stack's Last-In-First-Out (LIFO) nature, we can easily track opening brackets and ensure they are closed correctly.
+
+APPROACH:
+Stack for Tracking Open Brackets: We use a stack to store opening brackets as we encounter them. When we encounter a closing bracket, we check the top of the stack to see if it matches the corresponding opening bracket.
+
+STEPS:
+
+1. Iterate through the input string one character at a time.
+2. If the character is an opening bracket ((, {, [), push it onto the stack.
+3. If it is a closing bracket (), }, ]):
+    - Check if the stack is empty. If it is, the parentheses are not balanced.
+    - If the stack is not empty, check if the top of the stack contains the corresponding opening bracket. If not, return false.
+    - If they match, pop the top element from the stack.
+4. After the loop, check if the stack is empty. If it is, the parentheses are balanced.
