@@ -1,0 +1,2 @@
+We extract each word separated by '.' and keep appending it to the front of the 'ans' variable.
+Edge case is when you have no '.' in the string.
