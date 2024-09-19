@@ -1,0 +1,5 @@
+We maintain a 'maxi' variable which keeps track of the largest height of the building we have encountered so far.
+We traverse the array and for every building we check its height:
+    - If it is taller than 'maxi', we increase our answer count and store this height in 'maxi'
+    - If it is shorter or equal we simply continue the loop
+Return the count after exiting the loop
