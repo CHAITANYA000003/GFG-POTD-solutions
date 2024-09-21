@@ -1,0 +1,17 @@
+INTUITION:
+The challenge here lies in cloning the random pointers. The random pointers can point to any node in the list, not necessarily in a sequential fashion, making the process non-trivial.
+
+To efficiently clone the list, we follow a three-pass approach:
+    1. First Pass: We interleave cloned nodes into the original list. This helps in maintaining the link between original nodes and their corresponding cloned nodes.
+    2. Second Pass: Using the interleaved structure, we easily set up the random pointers for the cloned nodes.
+    3. Third Pass: We separate the original and cloned lists, restoring the original list while extracting the cloned list.
+This approach avoids the need for extra space like hash maps to store the mapping between original and cloned nodes.
+
+
+APPROACH:
+1. Interleaving Cloned Nodes:
+    We first create a new node for each original node and insert it immediately after the original node. This effectively doubles the list, with every original node followed by its cloned version.
+2. Setting Up Random Pointers:
+    After interleaving, each cloned node can easily access its original counterpart's random pointer. The cloned node's random pointer is set by pointing to original->random->next, which is the cloned version of the node the original random pointer points to.
+3. Separating the Lists:
+    Finally, we traverse the list again, restoring the next pointers of the original nodes and setting up the next pointers of the cloned nodes to separate them into two distinct lists.
