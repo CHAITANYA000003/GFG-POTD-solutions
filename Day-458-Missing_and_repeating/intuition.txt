@@ -1,0 +1,8 @@
+APPROACH:
+1. First we find the duplicate element and then we can find the missing element.
+2. For finding the duplicate element:
+    - We traverse the array, and for each element 'x' we find the absolute value and multiply the element at index 'x-1' with -1, indicating that this position has been visited.
+    - If the index that is being pointed already contains a negative value, it means that that position has been visited previously and 'index+1' is the value that is repeating twice.
+3. Now we find the missing element. This can be done using 2 approaches:
+    - by using XOR: Calculate xor1 which is XOR of all elements from 1 to n. Calculate xor2 which is the XOR of the given array elements excluding the duplicate element. The XOR of xor1 and xor2 is the missing element.
+    - or we can simply use linear search to find the missing element from the modified array. The index of the element that is positive is the missing value.
