@@ -1,0 +1,7 @@
+This problem is basically a mix of some of the important concepts related to linked lists.
+STEPS:
+1. First we find the middle element of the linked list using slow and fast pointers (the first middle element in case of even number of elements).
+2. We then reverse the list present after the middle element.
+3. Now we take two pointers - one pointing to the beginning of the linked list and the other pointing to the starting of the reversed part.
+4. We traverse, comparing the data parallely. If at any point there is a mismatch, we return false. Remember to reverse the modified part back to its original state.
+5. If there is no mismatch, we set the linked list back to its original state and return true.
