@@ -1,0 +1,7 @@
+The given problem is basically a modified version of longest increasing subarray.
+STEPS:
+1. We'll initialize two variables - ans to store the answer and curr to store the current length of the increasing subarray.
+2. We start iterating through the array, and everytime we see that the current element is greater than the previous element, we increase the curr value by 1.
+3. When we encounter an element which is lesser or equal to the previous element, we update the ans to store the maximum of ans and curr. We set the value of curr to 0 again.
+4. EDGE CASE: When there is an increasing subarray whose last element is the last element of the array. In this case, we'll have to check once again after exiting the loop.
+5. Return the ans.
