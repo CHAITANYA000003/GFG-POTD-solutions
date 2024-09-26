@@ -1,0 +1,12 @@
+INTUITION:
+We will be using sliding window, along with a Max Heap to solve this problem. The heap will store integer arrays. Each array is of size 2. The first element in the array stores the index of the element and the second element stores the value. While traversing the given array, we'll first add the current element along with its index to the heap and then check if the top element in the heap has an index within the current window. If yes, then we add the value part to our ans list. Else, we poll till we have an element that is within the range of the current window.
+
+STEPS:
+1. Initialize the Priority Queue with the custom comparator function that sorts based on the second element of the array(the value part).
+2. Add the first k elements from the given array into the pq. The top element of it will be the answer to the first window of the array.
+3. Next we Initialize left and right pointers to 1 and k respectively. Note that left and right pointer values are inclusive in the window.
+4. Run a while loop till right < n:
+    - First we add the current element to the heap.
+    - Run a while loop that checks whether the top element has an index less than the left value and keeps polling the top if its not.
+    - Then we add the value of the top element to the ans list.
+5. Return the ans.
