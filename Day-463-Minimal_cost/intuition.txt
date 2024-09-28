@@ -1,0 +1,8 @@
+INTUITION:
+We have to explore all the possible paths and find the minimum cost among them. We can use dp to find the most optimised solution.
+
+STEPS:
+1. We initialize a dynamic programming array dp of size n with all elements set to infinity, except for the first element which is set to 0.
+2. We iterate through the array from the second element to the last element.
+3. For each element, we iterate from 1 to k (inclusive) and update the dp value at the current index i to be the minimum of its current value and the dp value at i-j plus the absolute difference between the current element and the element at i-j.
+4. Finally, we return the dp value at the last index, which represents the minimum cost of traversing the entire array.
