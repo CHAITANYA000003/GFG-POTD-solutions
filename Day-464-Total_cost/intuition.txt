@@ -1,0 +1,7 @@
+STEPS:
+1. Traverse through the array and for each element, find it's quotient when divided by 'k' and add it to the count.
+2. Find it's reminder when divided by 'k' and if it is:
+    - > 0, then add 1 to the count
+    - = 0, then continue
+3. Remember the edge case where an element in the array is equal to zero. Increment the count by 1 in this case as well.
+4. Return the count.
