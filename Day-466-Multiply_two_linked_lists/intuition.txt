@@ -1,0 +1,4 @@
+STEPS:
+1. Maintain two variables of long type and compute the numbers represented in the linked lists. 
+2. Return their product.
+3. Divide with 'mod' in every step.
