@@ -1,0 +1,15 @@
+INTUITION:
+The idea is to use Boyer Moore's algorithm.
+If we need to have more than n/3 votes, then we can have 2 candidates ATMOST.
+
+STEPS:
+1. We traverse the array maintaining two variables for storing candidates and two more variables to store their votes. All of them are set to 0 initially.
+2. For each element of the array, we check
+    - if it is equal to candidate1 or candidate2 and we increment the respective counter.
+    - if it doesn't match both of them, then we check if any of the candidate's counter is zero. If yes, then we set that candidate value to current element and increase its counter by 1.
+    - if it doesn't match both of them and neither of their counters are zero, then we simply subtract 1 from both the counters.
+3. By the end of the above loop, we'll be left with two possible candidates. Note that these are only potential candidates and not the actual answer.
+4. We will run another loop to count the votes each of the above two candidates received.
+5. We'll check the vote count and add the candidate to the answer list if they have more than n/3 votes.
+6. Return the list.
+
