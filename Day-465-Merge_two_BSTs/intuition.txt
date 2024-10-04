@@ -1,0 +1,3 @@
+STEPS:
+1. We find the inorder traversals of each BST and store it in separate arrays. This gives us two arrays which are sorted within themselves.
+2. Now, using two-pointer approach, we can combine the two sorted lists to get a new sorted result.
