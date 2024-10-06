@@ -1,0 +1,2 @@
+INTUITION:
+This is a standard question. We can solve this using DFS or BFS, as both of them allow us to visited all the nodes in a graph(connected component) once. The idea is to maintain a visited array, which keeps track of all the visited cells. We'll run a for loop to check if any of the land is unvisited. If we find one, then we call the dfs/bfs function from that cell. This would mark all the connected cells as visited. After returning from the call, we increment the counter by 1.
