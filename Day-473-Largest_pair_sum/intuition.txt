@@ -1,0 +1,2 @@
+The optimal solution is to use two variables to keep track of the highest two values present in the array.
+After finding the two elements, we return their sum.
