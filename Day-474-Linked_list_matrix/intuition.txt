@@ -1,0 +1,5 @@
+STEPS:
+1. Created a 2D matrix of type Node.
+2. Created new node for each cell of the matrix.
+3. We then run a loop to connect the cells. The edge cells have special cases, make sure to fulfill them.
+4. Return the node at (0, 0), which would be the head of the 2D-linked list.
