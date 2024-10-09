@@ -1,0 +1,2 @@
+INTUITION:
+An efficient solution to this problem is to use hashing. The idea is to traverse the input array and store the index of the first occurrence in a hash map. For every other occurrence, find the difference between the index and the first index stored in the hash map. If the difference is more than the result so far, then update the result.
