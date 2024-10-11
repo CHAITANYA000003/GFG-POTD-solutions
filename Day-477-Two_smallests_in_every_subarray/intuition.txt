@@ -1,0 +1,4 @@
+Approach:
+
+1. Although we are said to scan for the smallest and second smallest element in all the subarrays, we can see that we have to return the MAXIMUM sum value for the smallest and second smallest element values
+2. So, this problem can be simplified into computing pair sum values and returning the maximum pair sum because in a pair the 2 values present would definitely be the smallest and the second smallest value within that subarray of size 2
