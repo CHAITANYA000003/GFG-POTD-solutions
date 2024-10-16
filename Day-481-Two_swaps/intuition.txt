@@ -1,0 +1,5 @@
+STEPS:
+1. 0 mismatches: Already sorted, do dummy swaps (true).
+2. 2 or >4 mismatches: Cannot be sorted with exactly two swaps (false).
+3. 3 mismatches: Always sortable with two swaps (true).
+4. 4 mismatches: We check if it is possible to set two numbers in their right place with a single swap. If yes, then we return true else false.
