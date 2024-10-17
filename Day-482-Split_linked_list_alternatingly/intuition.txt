@@ -1,0 +1,10 @@
+STEPS:
+1. Initialize two pointers for the two sub-lists.
+2. Maintain a counter variable to keep track of which sub-list we will be adding the current node to
+    - If counter is odd, we add the current node to the first sub-list.
+    - Else, we add the current element to the second sub-list.
+3. Traverse the original list.
+    - If the pointer to the sub-list is null, then we make the current node the head of that sub-list.
+    - Else, we add the current node as the next node of the pointer.
+4. Avoid dangling pointers. After exiting the loop, we set the end pointer of the sub-lists as null.
+5. Handle edge cases when we have no nodes or only have one node in the original linked list.
