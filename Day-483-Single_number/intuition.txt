@@ -1,0 +1,7 @@
+The idea is to use cumulative XOR operation on the entire array, which would leave us with the single element at the end.
+
+Some properties of XOR are:
+1. Any number when XORed with 0, gives us the number itself.
+2. Any number when XORed with itself, gives us 0.
+
+Using the above 2 properties, we can say that the even count numbers would just cancel themselves, while the odd count number would be left out.
