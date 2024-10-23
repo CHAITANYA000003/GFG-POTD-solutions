@@ -1,0 +1,13 @@
+We already know how we can solve this in two passes so not going over that solution.
+Let's try and solve it using a single pass.
+
+METHOD-1: Using O(n) space complexity
+We can maintain an array list keeping track of the prefix sum of each position while maintain a sum variable to simultaneously find the sum of the linked list. After traversal, we can remove the prefix sum at (len-n)th position from the total sum.
+
+METHOD-2: Using O(1) space complexity
+The idea is to use sliding window concept here.
+1. We initialize two pointers, one for traversing the list and the other will be used when we start to remove the elements from the sum.
+2. Start the while loop, check if the value of n<=0
+    - Check if the value of n<=0. If yes, then it means that there are more elements on the right side of the list and we can therefore remove the left elements from the beginning that we had added in our sum variable. Move the 
+    - Then we add the current data to the sum and move the temp pointer. We decrement the value of n by one.
+3. Return the sum after exiting the loop
