@@ -1,0 +1,11 @@
+To rotate a matrix clockwise by 90 degrees:
+    - First find the transpose of the matrix
+    - Then reverse all the rows of the matrix
+
+To rotate a matrix clockwise by 180 degrees:
+    - First reverse the rows of the matrix
+    - Then reverse the columns of the matrix
+
+To rotate a matrix clockwise by 270 degrees:
+    - First find the transpose of the matrix
+    - Then we reverse the columns of the matrix
