@@ -1,0 +1,3 @@
+USING PRE-ORDER TRAVERSAL -> O(N) time complexity and O(H) space complexity
+
+The idea is to do a preorder traversal of the tree. In the preorder traversal, keep track of the value calculated till the current node. For every node, we update the value as value*10 plus the node’s data. On reaching a leaf node, return the value calculated so far.
