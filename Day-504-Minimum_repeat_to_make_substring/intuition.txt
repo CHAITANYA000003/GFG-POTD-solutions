@@ -1,0 +1,5 @@
+The main crux of this question is to perform pattern matching.
+We can simply find the required multiplicity of s1 by dividing the length of s2 with it.
+We'll make an extra check with multi+1 to make sure to cover the additional cases.
+And to find if the needle is present in the hay, we use the KMP algorithm.
+Refer to NeetCode's video on KMP here : https://youtu.be/JoF0Z7nVSrA?feature=shared
