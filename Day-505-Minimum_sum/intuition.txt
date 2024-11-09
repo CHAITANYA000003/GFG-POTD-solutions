@@ -1,0 +1,7 @@
+STEPS:
+1. We begin by sorting the input array.
+2. All the digits at alternate positions will become part of a number. Therefore, we maintain 2 lists to store the digits of each number.
+3. Next we perform addition of 2 lists and find a new resultant list.
+4. Finally, we append the digits of the resultant list to a String and return this values.
+
+NOTE: Use StringBuilder instead of regular String. Using regular strings to perform append operations can take a time complexity of O(n^2) which would give us TLE. StringBuilder does this in O(n).
