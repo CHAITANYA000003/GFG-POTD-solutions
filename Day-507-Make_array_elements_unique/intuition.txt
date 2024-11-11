@@ -1,0 +1,7 @@
+Intution :
+
+1. Sort the Array in the ascending order.
+2. Now ignore the first element and start a loop from 1 to N and check for the following condition:
+    - If the current element is less than or equal to previous element, then we have to increment the current element so that after incrementing current element is strictly greater than its previous element. Update the current element and also keep track of the increments made.
+    - If the current element is greater than previous element then we are not supposed to do anything.
+3. Finally return the minimum increments.
