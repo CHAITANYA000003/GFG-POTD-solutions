@@ -1,0 +1,7 @@
+STEPS:
+
+1. We sort the given array based on the ending times first.
+2. Then we iterate the array starting from index 1, checking the starting time of the current meeting with the ending time of previous meeting.
+3. If it is greater or equal, we continue the loop.
+4. Else, we return false.
+5. At the end, if we successfully iterate through the array we return true.
