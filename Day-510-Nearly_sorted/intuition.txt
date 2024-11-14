@@ -1,0 +1,7 @@
+The idea is to use a sliding window to keep track of k elements at a time, and use a priority queue to sort them.
+
+STEPS:
+1. Have a priority queue and store the first k elements in it.
+2. Start a loop starting from kth index.
+3. For every index, add the corresponding element and poll an element from the priority queue. This will give us the element that needs to be put at the (index-k)th place.
+4. After exiting the loop, there will still be k elements remaining in the pq. We will run a while loop to poll these elements and put them in the array.
