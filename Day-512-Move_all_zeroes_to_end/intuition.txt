@@ -1,0 +1,8 @@
+The idea is to maintain two pointers - one to keep track of the position to insert the next non-zero element at, and the other will be iterating through the array.
+
+STEPS:
+1. Initialize ind (to keep track of the insertion position) and i (to iterate through the array).
+2. Run a while loop till i<n.
+3. For each i, check if the ith element is equal to zero or not.
+    - If yes, then increase i and continue.
+    - If no, then swap the elements at ind and i and increment both.
