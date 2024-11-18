@@ -1,0 +1,5 @@
+STEPS:
+1. Find the net d, which would be d%n.
+2. Rotate the first d elements of the array.
+3. Next, rotate the elements from dth index till the end.
+4. Finally, rotate the entire array and you'll have the required array.
