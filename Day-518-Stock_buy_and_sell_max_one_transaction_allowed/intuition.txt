@@ -1,0 +1,6 @@
+The idea is to utilise the left minimum concept.
+
+STEPS:
+1. Run a loop starting from the 1st index.
+2. For every index, check if the selling on that day gives us a higher profit. We subsequently check if the price on that day is lower than of the days previously encountered. If yes, then we update the buy value to it.
+3. Return the ans.
