@@ -1,0 +1,8 @@
+INTUITION (Striver made a video on this, check it out if required):
+This problem is of the pattern maximise the minimum. We can use binary search for answering such problems (min(max), max(min), min, and max problems too)
+The minimum possible distance between 2 stalls would be 1 and the maximum would be the (maximum-minimum). Therefore our answer lies in this interval.
+If we see the answers, there will be a polarity change at some point. After which, no value would solve the problem. We can therefore cut this half and hence binary search can be used here.
+Example:
+1 2 3 4 5 6 7
+Y Y Y N N N N
+Say the above is the solution set for some testcase. We can see that once we encounter a "NO", none of the values above it can solve the problem.
