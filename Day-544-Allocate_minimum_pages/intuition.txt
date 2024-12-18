@@ -1,0 +1,5 @@
+INTUITION: 
+1. A minimise the maximum kind of problem, therefore we can think of using binary search.
+2. Assume the value of k is equal to the number of books given, the answer in this case would be the maximum element in the array.
+3. Next assume that the value of k is given as 1, the answer in this case would be the sum of the array.
+4. Now we know that the answer lies somewhere in between them, this value is what we try to find using binary search.
