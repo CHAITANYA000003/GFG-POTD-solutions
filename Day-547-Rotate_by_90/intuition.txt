@@ -1,0 +1,2 @@
+1. Reverse the rows of the matrix
+2. Find the transpose
