@@ -1,0 +1,5 @@
+INTUITION:
+1. It is given that each row is sorted.
+2. Since there is no relation between the rows and columns, we have no other choice but to perform binary search on each row.
+3. A minor optimization would be to check the range of the current row with the target and see if it is possible to find the target in the current row.
+4. TC: O(n*logm)
