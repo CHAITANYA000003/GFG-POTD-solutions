@@ -1,0 +1,4 @@
+INTUITION:
+1. Rather than considering it as a 2D-matrix, we can consider the whole matrix as a 1D array instead.
+2. We won't be going through the array and creating a new temporary array as the time complexity would become O(n*m) again.
+3. Instead, we can get the row and column indices using division and modulo operations.
