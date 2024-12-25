@@ -1,0 +1,4 @@
+INTUITION:
+1. Since we are allowed only constant space, we need to come up with a way to store information within the matrix.
+2. We are using the first row and column of the matrix to store this info. Although we can use some other row and column too, we are choosing the first ones for simplicity.
+3. The edge case occurs for the first row and column though. Mat[0][0] is ambiguous as we don't know whether it is representing the row only, the column only, or both the row and column. Therefore, we decide that it would represent the row only, and we'll maintain a separate variable to store the column 0 information.
