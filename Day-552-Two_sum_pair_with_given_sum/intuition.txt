@@ -1,0 +1,3 @@
+INTUITION:
+1. Brute force approach of running two for loops would take us O(n^2) time complexity.
+2. We can optimise this by using a hashmap for retrieval, solving the problem in O(N) or O(NlogN).
