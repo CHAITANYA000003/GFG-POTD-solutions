@@ -1,0 +1,5 @@
+INTUITION:
+1. We can use a HashMap to maintain the frequencies of the elements.
+2. For each element we can simply look up whether the 'target-x' value is present in the map or not.
+    - If yes we can simply add the frequency to our answer variable, edge case being when 'target-x' is equal to x itself.
+3. At the end, we would have counted each pair twice, therefore we simply return ans/2.
