@@ -1,0 +1,3 @@
+INTUITION:
+1. We can store all the elements in a hashmap along with their indices.
+2. Now we can simply run a nested for loop for i and j, and retrieve the k values from the hashmap.
