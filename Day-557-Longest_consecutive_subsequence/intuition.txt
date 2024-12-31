@@ -1,0 +1,6 @@
+INTUITION:
+1. We can think of a sorting plus two pointer approach which would take O(NlogN) time complexity and O(1) space complexity.
+2. We can optimise the time complexity and solve it in O(N) instead by using a HashSet to store and retrieve the elements.
+3. We iterate through the array elements and see if the current element can be a starting point for a sequence. For an element to be a starting point, it's predecessor should not be present in the array.
+4. Once we find a starting point, we can then increment it by 1 and check how long the sequence is.
+5. Return the length of the longest sequence.
