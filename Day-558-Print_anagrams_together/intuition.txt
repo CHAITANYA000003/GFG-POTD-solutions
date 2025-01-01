@@ -1,0 +1,4 @@
+INTUITION:
+1. We can use a HashMap to solve this problem.
+2. The sorted string for all the anagrams would be same. Therefore, we can use this as the key in our hash map.
+3. The value part would be a list of all the strings that are anagrams. At the end, we can return all these lists in our ans list.
