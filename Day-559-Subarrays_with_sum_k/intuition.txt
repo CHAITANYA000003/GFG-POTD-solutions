@@ -1,0 +1,4 @@
+INTUITION:
+1. This problem is a slight modification over the longest continuous subarray with sum k.
+2. Instead of storing the indices as we had done in that problem, we instead store the frequency count of the running sum.
+3. When we find curr-k, we add that frequency to our answer.
