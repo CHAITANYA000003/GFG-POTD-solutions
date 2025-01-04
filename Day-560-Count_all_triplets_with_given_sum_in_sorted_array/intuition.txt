@@ -1,0 +1,4 @@
+INTUITION:
+1. The brute for would be running 3 loops leading to a time complexity of O(N^3).
+2. Slightly better approach would be using a hash map which would solve the problem in O(N^2) but would take a space complexity of O(N) or O(N^2) based on the approach we take. (Single loop and store the sums OR Double loop and store the elements).
+3. The best approach would be using a single loop and a two pointer within the loop which is what we have done.
