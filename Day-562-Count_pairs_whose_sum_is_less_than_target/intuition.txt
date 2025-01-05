@@ -1,0 +1,3 @@
+INTUITION:
+1. Brute force idea would be to run two loops.
+2. Optimal solution would be sorting the array first, and then using two-pointer approach to count the number of pairs.
