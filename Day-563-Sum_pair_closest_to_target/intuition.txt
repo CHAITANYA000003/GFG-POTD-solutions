@@ -1,0 +1,6 @@
+INTUITION:
+1. The brute force approach would be to run 2 for loops and find the sum difference between all possible pairs.
+2. The optimal solution would be to sort the array and use two-pointer approach.
+    - Find the current sum difference and compare with the sum_diff. If it is less then update the sum_diff.
+    - If the current sum is less than the target, increment i.
+    - If the current sum is greater than the target, decrement j.
