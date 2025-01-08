@@ -1,0 +1,6 @@
+INTUITION:
+1. The brute force solution would take O(n^3) time complexity.
+2. We can optimize this using sorting and two-pointer technique.
+    - Sort the array in descending order.
+    - For each element, apply two pointer approach to count the number of pairs whose sum is greater than it.
+    - Add it to the count.
